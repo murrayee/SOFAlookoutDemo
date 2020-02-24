@@ -22,7 +22,7 @@ services:
     restart: always
     volumes:
       - $PWD/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - $PWD/prometheus/rules.yml:/etc/prometheus/node_down.yml
+      - $PWD/prometheus/rules.yml:/etc/prometheus/rules.yml
     ports:
       - "9090:9090"
     networks:
